@@ -58,7 +58,7 @@ function displayNextQuestion() {
         if (questions.length > 0) {
             showQuestion(currentQuestionIndex);
         } else {
-            alert('Não há perguntas disponíveis.');
+            alert('There are no questions available.');
         }
     });
 }
@@ -108,7 +108,7 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
     const question = questions[currentQuestionIndex];
     const isCorrect = selectedAnswer.value === question.correctAnswer;
 
-    showModal(isCorrect ? 'Correto!' : 'Errado!', isCorrect ? 'Você acertou!' : `Resposta correta: ${question.correctAnswer}`);
+    showModal(isCorrect ? 'Correct!' : 'Wrong!', isCorrect ? 'You\'re right!' : `Right answer: ${question.correctAnswer}`);
 
     if (isCorrect) {
         currentQuestionIndex++;
@@ -120,7 +120,7 @@ document.getElementById('next-question').addEventListener('click', function() {
     if (currentQuestionIndex < questions.length) {
         showQuestion(currentQuestionIndex);
     } else {
-        alert('Fim do quiz!');
+        alert('End of the quiz!');
     }
 });
 
