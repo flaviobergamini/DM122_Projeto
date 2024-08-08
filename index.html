@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,33 +10,51 @@
     <link rel="manifest" href="./manifest.json" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <script type="module" src="./index.js" defer></script>
+    <script src="./scripts/splash-screen.js" defer></script>
     <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="splash-screen">
+        <img src="./images/quiz1.png" alt="" class="splash-image">
+        <progress id="progress-2"></progress>
+        <h4>Flávio H. M. Bergamini</h4>
+    </div>
+
+    <header>
+        <p>Quiz App</p>
+    </header>
+
     <main class="container">
-        <h1>Quiz</h1>
+        <br>
         <section id="quiz-question">
-            <h2 id="question-title">Pergunta 1</h2>
+            <h2 id="question-title">Question 1</h2>
             <p id="question-text"></p>
             <form id="quiz-form">
                 <fieldset id="answers"></fieldset>
-                <button type="submit">Enviar Resposta</button>
+                <button type="submit">Send Answer</button>
             </form>
         </section>
 
         <dialog id="modal">
             <article>
                 <header>
-                    <h2 id="modal-title">Resultado</h2>
+                    <h2 id="modal-title">Result</h2>
                 </header>
                 <p id="modal-text"></p>
                 <footer>
-                    <button id="next-question">Próxima Pergunta</button>
+                    <button id="next-question">Next Question</button>
                 </footer>
             </article>
         </dialog>
     </main>
+    
+    <footer>
+        <p>2024 All Rights Reserved. Bergas Corporation</p>
+        <p class="credit">For more information about the developer, visit their <a
+                href="https://flaviobergamini.github.io/DM121_Projeto/" target="_blank">website!</a></p>
+    </footer>
 </body>
 
 </html>

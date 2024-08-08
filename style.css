@@ -1,0 +1,62 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--pico-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+}
+
+#splash-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header,
+footer {
+    padding: 1rem;
+    background-color: var(--pico-gray-100);
+    text-align: center;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+main {
+    flex: 1;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#splash-screen img {
+    max-width: 100%;
+    height: auto;
+}
+
+#splash-screen progress {
+    width: 100%;
+    max-width: 400px;
+}
+
+.credit {
+    font-size: 15px;
+}
