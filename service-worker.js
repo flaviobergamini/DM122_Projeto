@@ -24,12 +24,15 @@ async function installStaticAssets() {
             cache.addAll([
                 'https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css',
                 './images/quiz.png',
+                './images/quiz1.png',
                 './images/favicon-16x16.png',
                 './images/favicon-32x32.png',
                 './',
                 './scripts/trivia-api-repository.js',
+                './scripts/splash-screen.js',
                 './scripts/service-worker/install-service-worker.js',
                 './index.js',
+                './style.css',
                 './index.html',
             ])
         );
