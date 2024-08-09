@@ -76,7 +76,7 @@ function showQuestion(index) {
     const questionText = document.getElementById('question-text');
     const answers = document.getElementById('answers');
 
-    questionTitle.textContent = `Pergunta ${index + 1}`;
+    questionTitle.textContent = `Question ${index + 1}`;
     questionText.textContent = question.question.text;
     answers.innerHTML = '';
 
