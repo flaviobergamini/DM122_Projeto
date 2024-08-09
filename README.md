@@ -39,6 +39,15 @@ cd DM122_Projeto
 #### Iniciando Projeto
 Abra o arquivo index.html com algum navegador de internet, tal como o Microsoft Edge, Google Chrome, Mozila Firefox, Opera, entre outros. Possivelmente haverá restrições de compatibilidade com o Microsoft Internet Explorer.
 
+#### Imagens
+Página inicial do site:
+- Splash Screen:
+  ![Screenshot 2024-08-09 105535](https://github.com/user-attachments/assets/5fc73109-10f3-4205-9ee4-d9f27eb013d4)
+  
+- Home:
+![Screenshot 2024-08-09 111316](https://github.com/user-attachments/assets/9f508cfc-059f-4f64-ac12-0535297e7d2a)
+
+
 ## :question: Dúvidas
 Envie um email ao desenvolvedor: flavio.bergamini@pg.inatel.br
 
